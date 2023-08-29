@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:navigation/pageA.dart';
 import 'package:navigation/pageB.dart';
+import 'package:navigation/pageDetail.dart';
 import 'package:navigation/pageListe.dart';
+import 'package:navigation/truc.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,6 +26,8 @@ class MyApp extends StatelessWidget {
       '/ecrana': (context) => PageA(),
       '/ecranb': (context) => PageB(name: ''),
       '/ecranliste': (context) => PageListe(),
+      '/ecrandetail': (context) => PageDetail(trucs: Truc(id: 0, name: ''),
+    ),
     };
   }
 }
