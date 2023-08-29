@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:navigation/pageA.dart';
 import 'package:navigation/pageB.dart';
+import 'package:navigation/pageListe.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
   Map<String, WidgetBuilder> routes() {
     return {
       '/ecrana': (context) => PageA(),
-      '/ecranb': (context) => PageB(name: '',),
+      '/ecranb': (context) => PageB(name: ''),
+      '/ecranliste': (context) => PageListe(),
     };
   }
 }
